@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk - Login</title>
+
+    <!-- Ícones -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg,#dff5e1,#ccefd5,#b9e6c2);
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .login{
+            width:380px;
+            background:#ffffff;
+            border-radius:18px;
+            padding:35px;
+            box-shadow:0 10px 30px rgba(0,0,0,.15);
+            text-align:center;
+        }
+
+        .icone{
+            width:90px;
+            height:90px;
+            background:#d8f2dc;
+            border-radius:50%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin:0 auto 20px;
+            color:#3b8d5b;
+            font-size:42px;
+        }
+
+        h1{
+            color:#2f6f49;
+            margin-bottom:8px;
+            font-size:28px;
+        }
+
+        p{
+            color:#5f7f69;
+            margin-bottom:25px;
+            font-size:15px;
+        }
+
+        .campo{
+            text-align:left;
+            margin-bottom:18px;
+        }
+
+        .campo label{
+            display:block;
+            margin-bottom:6px;
+            color:#466c54;
+            font-weight:bold;
+        }
+
+        .campo input{
+            width:100%;
+            padding:12px;
+            border:1px solid #b8d8c2;
+            border-radius:8px;
+            background:#f5fcf6;
+            font-size:15px;
+            outline:none;
+            transition:.3s;
+        }
+
+        .campo input:focus{
+            border-color:#5ba56f;
+            box-shadow:0 0 6px rgba(91,165,111,.3);
+        }
+
+        button{
+            width:100%;
+            padding:13px;
+            border:none;
+            border-radius:8px;
+            background:#6fbf7f;
+            color:white;
+            font-size:16px;
+            font-weight:bold;
+            cursor:pointer;
+            transition:.3s;
+        }
+
+        button:hover{
+            background:#4fa567;
+        }
+
+        footer{
+            margin-top:25px;
+            color:#7c8d81;
+            font-size:13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="login">
+
+    <div class="icone">
+        <i class="fa-solid fa-headset"></i>
+    </div>
+
+    <h1>Help Desk</h1>
+
+    <p>Sistema de Gestão de Chamados Técnicos</p>
+
+    <form action="/home">
+
+        <div class="campo">
+            <label>Login</label>
+            <input type="text" name="login" placeholder="Digite seu usuário" required>
+        </div>
+
+        <div class="campo">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha"name="senha" placeholder="Digite sua senha" required>
+        </div>
+
+        <button type="submit">Entrar</button>
+
+    </form>
+
+    <footer>
+        © 2026 - Desenvolvido por Izabel Reinaldo
+    </footer>
+
+</div>
+
+</body>
+</html>
